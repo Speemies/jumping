@@ -151,8 +151,8 @@ local function checklisting(uid, gems, item, version, shiny, amount, username, p
 
     if item == "Glittering Charm" and price <= 420000 then
         task.wait(3.2)
-	    local boughtPet, boughtMessage = purchase:InvokeServer(playerid, uid)
-	    processListingInfo(uid, gems, item, version, shiny, amount, username, boughtPet, ping)
+	local boughtPet, boughtMessage = purchase:InvokeServer(playerid, uid)
+	processListingInfo(uid, gems, item, version, shiny, amount, username, boughtPet, ping)
     end
 end
 
